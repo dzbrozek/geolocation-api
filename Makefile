@@ -1,4 +1,4 @@
-.PHONY : build up bootstrap down removevolumes mypy test test managepy precommit testci
+.PHONY : build up bootstrap down removevolumes mypy test managepy precommit testci
 
 build:
 	docker build -t geolocation-api \
