@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'django_extensions',
-    'debug_toolbar',
     'drf_spectacular',
     'geolocations',
     'users',
@@ -56,7 +55,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'geolocationapi.urls'
