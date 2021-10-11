@@ -20,3 +20,4 @@ djangorestframework-simplejwt==4.8.0
 freezegun==1.1.0
 types-requests==2.25.9
 types-freezegun==1.1.0
+drf-spectacular==0.20.1

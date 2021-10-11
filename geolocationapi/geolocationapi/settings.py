@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'django_extensions',
     'debug_toolbar',
+    'drf_spectacular',
     'geolocations',
     'users',
 ]
@@ -137,6 +138,18 @@ REST_FRAMEWORK = {
         'djangorestframework_camel_case.parser.CamelCaseMultiPartParser',
     ),
     'JSON_UNDERSCOREIZE': {'no_underscore_before_number': True},
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+}
+
+# Schema
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Geolocation API',
+    'DESCRIPTION': 'The aim of this project is to build an API that requires JWT authorization. '
+    'The application should be able to store geolocation data in the database, '
+    'based on IP address or URL. '
+    'The API should be able to add, delete or provide geolocation data on the base of ip address or URL',
+    'VERSION': '1.0.0',
+    'POSTPROCESSING_HOOKS': ['drf_spectacular.contrib.djangorestframework_camel_case.camelize_serializer_fields'],
 }
 
 # cors

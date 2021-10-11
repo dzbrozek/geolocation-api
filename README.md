@@ -65,3 +65,7 @@ Test users created during bootstrapping the project.
 ### Tests
 
 To run the tests use `make test` command
+
+#### API spec
+
+API spec is available under [http://127.0.0.1:8000/api/schema/redoc/](http://127.0.0.1:8000/api/schema/redoc/).
