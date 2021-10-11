@@ -1,9 +1,7 @@
-from geolocation.clients.ipstack import IPStack, IPStackLookup
+from geolocations.clients.ipstack import IPStack, IPStackLookup
 
 
 class IPStackMock(IPStack):
-    API_ENDPOINT = 'http://api.ipstack.com/'
-
     def __init__(self, access_key: str):
         pass
 

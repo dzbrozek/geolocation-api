@@ -7,22 +7,40 @@ The API should be able to add, delete or provide geolocation data on the base of
 [![codecov](https://codecov.io/gh/dzbrozek/geolocation-api/branch/main/graph/badge.svg)](https://codecov.io/gh/dzbrozek/geolocation-api)
 
 
-### Running
+### Development
 
 #### Requirements
 
 This app is using Docker so make sure you have both: [Docker](https://docs.docker.com/install/)
 and [Docker Compose](https://docs.docker.com/compose/install/)
 
+#### Prepare env variables
+
+Copy env variables from the template
+
+```
+cp .env.template .env
+```
+
+and add missing variables:
+
+* `DJANGO_IPSTACK_ACCESS_KEY`: To obtain access API visit [https://ipstack.com/signup/free](https://ipstack.com/signup/free)
+
+
+#### Copy dev settings
+
+```
+cp geolocationapi/geolocationapi/settings_dev_template.py geolocationapi/geolocationapi/settings_dev.py
+```
+
 #### Bootstrap
 
-To bootstrap the app move to the app directory and call
+To bootstrap the app you have to build the image and bootstrap the environment
 
 ```
 make build
 make bootstrap
 ```
-
 
 Once it's done the app should be up app and running. You can verify that visiting [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
 

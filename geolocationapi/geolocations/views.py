@@ -2,8 +2,8 @@ from typing import cast
 
 from django.contrib.auth.models import User
 from django.db import models
-from geolocation.models import GeolocationRequest
-from geolocation.serializers import GeolocationRequestSerializer
+from geolocations.models import GeolocationRequest
+from geolocations.serializers import GeolocationRequestSerializer
 from rest_framework import mixins
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.viewsets import GenericViewSet

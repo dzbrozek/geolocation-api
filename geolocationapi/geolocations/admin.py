@@ -1,5 +1,5 @@
 from django.contrib import admin
-from geolocation.models import Geolocation, GeolocationRequest
+from geolocations.models import Geolocation, GeolocationRequest
 
 
 @admin.register(GeolocationRequest)

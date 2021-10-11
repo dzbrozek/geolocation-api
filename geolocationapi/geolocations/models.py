@@ -7,7 +7,7 @@ class GeolocationRequest(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f'Geolocation request: ${self.pk}'
+        return f'Geolocation request: {self.pk}'
 
 
 class Geolocation(models.Model):
@@ -18,7 +18,7 @@ class Geolocation(models.Model):
     continent_name = models.CharField(max_length=20, blank=True)
     country_code = models.CharField(max_length=2, blank=True)
     country_name = models.CharField(max_length=50, blank=True)
-    region_code = models.CharField(max_length=2, blank=True)
+    region_code = models.CharField(max_length=5, blank=True)
     region_name = models.CharField(max_length=50, blank=True)
     city = models.CharField(max_length=50, blank=True)
     zip = models.CharField(max_length=10, blank=True)
@@ -26,4 +26,4 @@ class Geolocation(models.Model):
     longitude = models.DecimalField(max_digits=20, decimal_places=17, null=True, blank=True)
 
     def __str__(self):
-        return f'Geolocation: ${self.pk}'
+        return f'Geolocation: {self.pk}'

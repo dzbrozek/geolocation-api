@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'django_extensions',
     'debug_toolbar',
-    'geolocation',
+    'geolocations',
 ]
 
 MIDDLEWARE = [
@@ -144,7 +144,7 @@ CORS_URLS_REGEX = r'^/api/.*$'
 SHELL_PLUS = "ipython"
 
 # IPStack
-IPSTACK_KEY = os.environ.get('DJANGO_IPSTACK_KEY')
+IPSTACK_ACCESS_KEY = os.environ.get('DJANGO_IPSTACK_ACCESS_KEY')
 
 # testing
 IS_TESTING = False

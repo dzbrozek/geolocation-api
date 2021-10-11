@@ -2,8 +2,8 @@ from django.http import HttpRequest
 from django.test import TestCase
 from django.utils import timezone
 from freezegun import freeze_time
-from geolocation.factories import UserFactory
-from geolocation.serializers import GeolocationRequestSerializer
+from geolocations.factories import UserFactory
+from geolocations.serializers import GeolocationRequestSerializer
 from rest_framework.exceptions import ErrorDetail
 
 
