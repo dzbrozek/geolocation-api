@@ -1,0 +1,135 @@
+[
+{
+    "model": "geolocations.geolocation",
+    "pk": 1,
+    "fields": {
+        "request": 1,
+        "ip": "19.117.63.126",
+        "type": "ipv4",
+        "continent_code": "NA",
+        "continent_name": "North America",
+        "country_code": "US",
+        "country_name": "United States",
+        "region_code": "",
+        "region_name": "",
+        "city": "",
+        "zip": "",
+        "latitude": "37.880001068115234000",
+        "longitude": "-96.79499816894531000"
+    }
+},
+{
+    "model": "geolocations.geolocation",
+    "pk": 2,
+    "fields": {
+        "request": 2,
+        "ip": "684d:1111:222:3333:4444:5555:6:77",
+        "type": "ipv6",
+        "continent_code": "",
+        "continent_name": "",
+        "country_code": "",
+        "country_name": "",
+        "region_code": "",
+        "region_name": "",
+        "city": "",
+        "zip": "",
+        "latitude": null,
+        "longitude": null
+    }
+},
+{
+    "model": "geolocations.geolocation",
+    "pk": 3,
+    "fields": {
+        "request": 4,
+        "ip": "1.1.1.1",
+        "type": "ipv4",
+        "continent_code": "OC",
+        "continent_name": "Oceania",
+        "country_code": "AU",
+        "country_name": "Australia",
+        "region_code": "NSW",
+        "region_name": "NSW",
+        "city": "Sydney",
+        "zip": "2000",
+        "latitude": "-33.867141723632810000",
+        "longitude": "151.20710754394530000"
+    }
+},
+{
+    "model": "geolocations.geolocation",
+    "pk": 4,
+    "fields": {
+        "request": 5,
+        "ip": "185.157.15.59",
+        "type": "ipv4",
+        "continent_code": "EU",
+        "continent_name": "Europe",
+        "country_code": "PL",
+        "country_name": "Poland",
+        "region_code": "MA",
+        "region_name": "MA",
+        "city": "Wieliczka",
+        "zip": "32-005",
+        "latitude": "49.961868286132810000",
+        "longitude": "20.17374992370605500"
+    }
+},
+{
+    "model": "geolocations.geolocation",
+    "pk": 5,
+    "fields": {
+        "request": 6,
+        "ip": "2001:db8:85a3::8a2e:370:7334",
+        "type": "ipv6",
+        "continent_code": "",
+        "continent_name": "",
+        "country_code": "",
+        "country_name": "",
+        "region_code": "",
+        "region_name": "",
+        "city": "",
+        "zip": "",
+        "latitude": null,
+        "longitude": null
+    }
+},
+{
+    "model": "geolocations.geolocation",
+    "pk": 6,
+    "fields": {
+        "request": 7,
+        "ip": "93.184.216.34",
+        "type": "ipv4",
+        "continent_code": "NA",
+        "continent_name": "North America",
+        "country_code": "US",
+        "country_name": "United States",
+        "region_code": "CA",
+        "region_name": "CA",
+        "city": "San Jose",
+        "zip": "95122",
+        "latitude": "37.330528259277344000",
+        "longitude": "-121.83822631835938000"
+    }
+},
+{
+    "model": "geolocations.geolocation",
+    "pk": 7,
+    "fields": {
+        "request": 8,
+        "ip": "142.250.65.68",
+        "type": "ipv4",
+        "continent_code": "NA",
+        "continent_name": "North America",
+        "country_code": "US",
+        "country_name": "United States",
+        "region_code": "VA",
+        "region_name": "VA",
+        "city": "Herndon",
+        "zip": "20170",
+        "latitude": "38.983718872070310000",
+        "longitude": "-77.38275909423828000"
+    }
+}
+]
