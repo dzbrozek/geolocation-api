@@ -22,16 +22,10 @@ Copy env variables from the template
 cp .env.template .env
 ```
 
-and add missing variables:
+and add missing variables to `.env`:
 
 * `DJANGO_IPSTACK_ACCESS_KEY`: To obtain access key visit [https://ipstack.com/signup/free](https://ipstack.com/signup/free)
 
-
-#### Copy dev settings
-
-```
-cp geolocationapi/geolocationapi/settings_dev_template.py geolocationapi/geolocationapi/settings_dev.py
-```
 
 #### Build and bootstrap the app
 

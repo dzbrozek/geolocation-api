@@ -129,5 +129,3 @@ dmypy.json
 .pyre/
 
 .idea/
-
-geolocationapi/geolocationapi/settings_dev.py
