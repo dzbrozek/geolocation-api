@@ -5,10 +5,11 @@ import requests.exceptions
 from django.core.exceptions import ValidationError as DjangoValidationError
 from django.core.validators import URLValidator, validate_ipv46_address
 from django.db import transaction
+from rest_framework import serializers
+
 from geolocations.clients import get_ipstack_client
 from geolocations.clients.ipstack import IPStackException
 from geolocations.models import Geolocation, GeolocationRequest
-from rest_framework import serializers
 
 logger = logging.getLogger(__name__)
 

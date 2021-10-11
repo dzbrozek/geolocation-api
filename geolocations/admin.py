@@ -1,4 +1,5 @@
 from django.contrib import admin
+
 from geolocations.models import Geolocation, GeolocationRequest
 
 

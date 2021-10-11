@@ -3,11 +3,12 @@ from typing import cast
 from django.contrib.auth.models import User
 from django.db import models
 from drf_spectacular.utils import extend_schema, extend_schema_view
-from geolocations.models import GeolocationRequest
-from geolocations.serializers import GeolocationRequestSerializer
 from rest_framework import mixins
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.viewsets import GenericViewSet
+
+from geolocations.models import GeolocationRequest
+from geolocations.serializers import GeolocationRequestSerializer
 
 
 @extend_schema_view(

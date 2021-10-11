@@ -1,6 +1,7 @@
 from django.test import TestCase
-from geolocations.factories import UserFactory
 from rest_framework.exceptions import ErrorDetail
+
+from geolocations.factories import UserFactory
 from users.serializers import SignupSerializer
 
 

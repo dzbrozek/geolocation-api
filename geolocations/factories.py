@@ -1,5 +1,6 @@
 import factory.fuzzy
 from django.contrib.auth.models import User
+
 from geolocations.models import Geolocation, GeolocationRequest
 
 USER_PASSWORD = 'password'  # nosec

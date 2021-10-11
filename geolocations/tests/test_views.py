@@ -1,9 +1,10 @@
 from django.urls import reverse
 from djangorestframework_camel_case.util import camelize
+from rest_framework.test import APITestCase
+
 from geolocations.factories import GeolocationRequestFactory, UserFactory
 from geolocations.models import GeolocationRequest
 from geolocations.serializers import GeolocationRequestSerializer
-from rest_framework.test import APITestCase
 
 
 class GeolocationRequestViewSetListTest(APITestCase):

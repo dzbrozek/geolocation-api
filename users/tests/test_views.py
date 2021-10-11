@@ -2,6 +2,7 @@ from django.contrib.auth.models import User
 from django.urls import reverse
 from djangorestframework_camel_case.util import camelize
 from rest_framework.test import APITestCase
+
 from users.serializers import SignupSerializer
 
 

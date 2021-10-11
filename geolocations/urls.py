@@ -1,6 +1,7 @@
 # Routers provide an easy way of automatically determining the URL conf.
-from geolocations.views import GeolocationRequestViewSet
 from rest_framework import routers
+
+from geolocations.views import GeolocationRequestViewSet
 
 app_name = 'geolocations'
 

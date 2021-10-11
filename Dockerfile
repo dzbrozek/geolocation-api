@@ -9,12 +9,12 @@ ARG GROUP_ID
 RUN addgroup --gid $GROUP_ID user \
   && adduser --disabled-password --gecos "" --uid $USER_ID --gid $GROUP_ID user
 
-COPY requirements /app/requirements/
+COPY geolocationapi/requirements.txt /app/requirements.txt
 COPY entrypoint /app/entrypoint/
 
 WORKDIR /app/geolocationapi
 
-RUN pip install -r /app/requirements/dev.txt --no-cache-dir \
+RUN pip install -r /app/requirements.txt --no-cache-dir \
     && apt-get update \
     && apt-get install -y \
     vim=2:8.1.0875-5 \
