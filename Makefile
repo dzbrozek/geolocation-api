@@ -24,6 +24,8 @@ makemigrations:
 	docker-compose exec -T backend python manage.py makemigrations
 shell:
 	docker-compose exec backend python manage.py shell_plus
+schema:
+	docker-compose exec backend python manage.py spectacular --file schema.yml
 managepy:
 	docker-compose exec -T backend python manage.py $(arguments)
 precommit:
