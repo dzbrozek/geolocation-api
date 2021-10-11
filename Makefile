@@ -1,4 +1,4 @@
-.PHONY : build up bootstrap down removevolumes mypy test managepy precommit testci
+.PHONY : shell build up bootstrap down removevolumes mypy test managepy precommit testci migrate makemigrations
 
 build:
 	docker build -t geolocation-api \
@@ -18,6 +18,12 @@ mypy:
 	docker-compose exec -T backend mypy --config-file ../mypy.ini ./
 test:
 	docker-compose exec backend python manage.py test $(arguments) --verbosity 3 --parallel
+migrate:
+	docker-compose exec -T backend python manage.py migrate
+makemigrations:
+	docker-compose exec -T backend python manage.py makemigrations
+shell:
+	docker-compose exec backend python manage.py shell_plus
 managepy:
 	docker-compose exec -T backend python manage.py $(arguments)
 precommit:
