@@ -24,7 +24,7 @@ cp .env.template .env
 
 and add missing variables:
 
-* `DJANGO_IPSTACK_ACCESS_KEY`: To obtain access API visit [https://ipstack.com/signup/free](https://ipstack.com/signup/free)
+* `DJANGO_IPSTACK_ACCESS_KEY`: To obtain access key visit [https://ipstack.com/signup/free](https://ipstack.com/signup/free)
 
 
 #### Copy dev settings
@@ -33,9 +33,7 @@ and add missing variables:
 cp geolocationapi/geolocationapi/settings_dev_template.py geolocationapi/geolocationapi/settings_dev.py
 ```
 
-#### Bootstrap
-
-To bootstrap the app you have to build the image and bootstrap the environment
+#### Build and bootstrap the app
 
 ```
 make build
