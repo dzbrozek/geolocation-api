@@ -10,6 +10,7 @@ paths:
   /api/geolocations/:
     get:
       operationId: geolocations_list
+      description: Returns a list of geocoded addresses
       tags:
       - geolocations
       security:
@@ -25,6 +26,7 @@ paths:
           description: ''
     post:
       operationId: geolocations_create
+      description: Geocodes given IP or URL address
       tags:
       - geolocations
       requestBody:
@@ -51,6 +53,7 @@ paths:
   /api/geolocations/{id}/:
     get:
       operationId: geolocations_retrieve
+      description: Retrieves details of a geocoded address
       parameters:
       - in: path
         name: id
@@ -70,6 +73,7 @@ paths:
           description: ''
     delete:
       operationId: geolocations_destroy
+      description: Destroys a geocoded address
       parameters:
       - in: path
         name: id
@@ -282,6 +286,7 @@ paths:
   /api/users/:
     post:
       operationId: users_create
+      description: Creates a new user account
       tags:
       - users
       requestBody:
